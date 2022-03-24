@@ -7,11 +7,8 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-  <h1 style=" cursor: pointer;" onclick="location.href='index.html'">About me!</h1>
   <div id="main_body">
-    <div class="heart"><br><br>
-        <p class="quote">눌러주세요</p>
-    </div>
+    <h1 style=" cursor: pointer;" onclick="location.href='index.html'">About me!</h1>
     <div id="main">
       <div id="one" style=" cursor: pointer;" onclick="location.href='one.html'">
           <p>어떤사람인가</p>
@@ -29,12 +26,15 @@
     <div id="content">
         <p class="main_content">안녕하세요 저를 소개하는 페이지입니다!</p>
         <p class="main_content">저에 대해 궁금하시다면 메뉴를 클릭해주세요^__^</p>
-        <img id="img" src="cute.jpg">
+        <img id="img" src="photo/cute.jpg">
     </div>
     <div id="footer">
         <p>블로그 : https://star-peanuts.tistory.com/</p>
         <p>깃허브 : https://github.com/jia5232</p>
     </div>
+  </div>
+  <div class="heart"><br><br>
+    <p class="quote">눌러주세요</p>
   </div>
 </body>
 </html>
@@ -50,8 +50,8 @@
 </script>
 <script type="text/javascript">
     var colours=new Array('#ED2867', '#F8CFE5', '#F6A0A2', '#F4609D', '#FAAACB', '#FA2A5B');
-    var minisize=6; // smallest size of hearts in pixels
-    var maxisize=12; // biggest size of hearts in pixels
+    var minisize=8; // smallest size of hearts in pixels
+    var maxisize=16; // biggest size of hearts in pixels
     var hearts=50; // maximum number of hearts on screen
     var over_or_under="over";
 

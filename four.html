@@ -7,52 +7,52 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
+  <div id="main_body">
     <h1 style=" cursor: pointer;" onclick="location.href='index.html'">About me!</h1>
-    <div class="heart"><br><br>
-        <p class="quote">눌러주세요</p>
-    </div>
-  <script>
-    const circle = document.querySelector(".heart");
-
-    document.addEventListener("mousemove", (e) => {
-        const mouseX = e.pageX;
-        const mouseY = e.pageY;
-        circle.style.left = mouseX + 'px';
-        circle.style.top = mouseY + 'px';
-    });
-</script>
-
     <div id="main">
-        <div id="one" style=" cursor: pointer;" onclick="location.href='one.html'">
-            <p>어떤사람인가</p>
-        </div>
-        <div id="two" style=" cursor: pointer;" onclick="location.href='two.html'">
-            <p>뭘 좋아하나</p>
-        </div>
-        <div id="three" style=" cursor: pointer;" onclick="location.href='three.html'">
-            <p>요즘 뭐하나</p>
-        </div>
-        <div id="four" style=" cursor: pointer;" onclick="location.href='four.html'">
-            <p>출몰지역</p>
-        </div>
+      <div id="one" style=" cursor: pointer;" onclick="location.href='one.html'">
+          <p>어떤사람인가</p>
+      </div>
+      <div id="two" style=" cursor: pointer;" onclick="location.href='two.html'">
+          <p>뭘 좋아하나</p>
+      </div>
+      <div id="three" style=" cursor: pointer;" onclick="location.href='three.html'">
+          <p>요즘 뭐하나</p>
+      </div>
+      <div id="four" style=" cursor: pointer;" onclick="location.href='four.html'">
+          <p>출몰지역</p>
+      </div>
     </div>
     <div id="content">
-        <p id="main_content">안녕하세요 저를 소개하는 페이지입니다!</p>
-        <p id="main_content">저에 대해 궁금하시다면 메뉴를 클릭해주세요^__^</p>
-        <img id="img" src="cute.jpg">
+      <p id="main_content_sub">저는 서울 성북구 보문동에 거주하고있습니다!! 성신여대랑 걸어서 10분?거리에요</p>
+      <p id="main_content_sub">그래서 성신여대입구역으로 진짜진짜 자주가고 평소에는 보문역 지박령입니다</p>
+      <p id="main_content_sub">또 요번학기부터는 대면수업도 생겨서 화,목은 학교에도 출몰합니다</p>
+      <img id="img" src="photo/sadfasdf.jpg">
     </div>
     <div id="footer">
         <p>블로그 : https://star-peanuts.tistory.com/</p>
         <p>깃허브 : https://github.com/jia5232</p>
     </div>
-    
+  </div>
+  <div class="heart"><br><br>
+    <p class="quote">눌러주세요</p>
+  </div>
 </body>
 </html>
+<script>
+  const circle = document.querySelector(".heart");
 
+  document.addEventListener("mousemove", (e) => {
+      const mouseX = e.pageX;
+      const mouseY = e.pageY;
+      circle.style.left = mouseX + 'px';
+      circle.style.top = mouseY + 'px';
+  });
+</script>
 <script type="text/javascript">
     var colours=new Array('#ED2867', '#F8CFE5', '#F6A0A2', '#F4609D', '#FAAACB', '#FA2A5B');
-    var minisize=6; // smallest size of hearts in pixels
-    var maxisize=12; // biggest size of hearts in pixels
+    var minisize=8; // smallest size of hearts in pixels
+    var maxisize=16; // biggest size of hearts in pixels
     var hearts=50; // maximum number of hearts on screen
     var over_or_under="over";
 
